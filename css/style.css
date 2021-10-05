@@ -1,0 +1,161 @@
+
+body{
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-attachment: fixed;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: x-large;
+    margin: 15px 0px 25px;
+}
+p{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    color: hsl(237, 12%, 33%);
+    cursor: pointer;
+    font-weight: unset;
+}
+#arrow{
+    content: url(/images/icon-arrow-down.svg);
+    margin-right: 2px;
+    /* transform: rotate(0deg); */
+}
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.answers{
+    display: none;
+    color: hsl(240, 6%, 50%);
+    padding-right: 20px ;
+    margin-bottom: 10px;
+}
+
+/* Mobile Viwe */
+@media (max-width: 1000px) {
+    .section1{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: white;
+        width: 75%;
+        margin: auto;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+    
+    .imgs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 266px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -130px;
+    }
+    .women {
+        content: url(/images/illustration-woman-online-mobile.svg);
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: -5px;
+        margin-right: 25px;
+        margin-left: -11px;
+    }
+    
+    .shadow {
+        content: url(/images/bg-pattern-mobile.svg);
+        margin-top: -83px;
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+
+}
+/* Desktop viwe */
+@media (min-width: 1000px) {
+    .section1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        background: white;
+        width: 50em;
+        margin: auto;
+        padding: 30px 20px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgs {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -130px;
+        position: relative;
+    }
+    
+    .box {
+        content: url(/images/illustration-box-desktop.svg);
+        position: absolute;
+        transform: translate(-50% , -50%);
+        top: 22em;
+        left: -17px;
+        position: relative; 
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        0% {top:22em;}
+        50% {top:19em;}
+        100% {top:022em;}
+    }
+    .women {
+        content: url(/images/illustration-woman-online-desktop.svg);
+        position: absolute;
+        top: 20.4em;
+        left: 103px;
+        transform: translate(-50% , -50%);
+        width: 330px;
+        z-index: -1;
+    }
+    
+    .shadow {
+        content: url(/images/bg-pattern-desktop.svg);
+        position: absolute;
+        top: 60%;
+        left: -4%;
+        transform: translate(-50% , -50%);
+        width: 40em;
+        z-index: -2;
+    }
+    
+    .content{
+        width: 50%;
+    }
+}
+
+/*animation arrow onclick*/
+@keyframes arrowUp {
+    100% {transform: rotate(180deg);}
+}
+@keyframes arrowDown {
+    0% {transform: rotate(180deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* Test for me pseudo ele ::after*/
+/* p::after{
+    content: url(/images/icon-arrow-down.svg);
+    position: absolute;
+    right: 25px;
+    transform: var(--test);
+} */
