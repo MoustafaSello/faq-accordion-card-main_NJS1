@@ -8,7 +8,7 @@ let par5 = document.getElementById('p5');
 
 //Active paragraph in page load
 par2.style.fontWeight = "bold";
-par2.querySelector('#arrow').style.cssText =
+par2.querySelector('.arrow').style.cssText =
     "animation-name: arrowUp; animation-duration: 1.5s; animation-fill-mode: forwards;";
 document.getElementById(`${par2.id}Answer`).style.display = "block";
 
@@ -20,8 +20,8 @@ function answers(pars) {
     const answer = document.getElementById(`${pars.id}Answer`);
     //Back all P & Answers style to orignal at style.css
     document.querySelectorAll(".answers").forEach(ele => ele.style.display = "none");
-    document.querySelectorAll("p").forEach(ele1 => ele1.style.fontWeight = "unset");
-    document.querySelectorAll('#arrow').forEach(arrows => {
+    document.querySelectorAll("h4").forEach(ele1 => ele1.style.fontWeight = "unset");
+    document.querySelectorAll('.arrow').forEach(arrows => {
         if (arrows.style.animationName == 'arrowUp' || arrows.style.transform == "rotate(180deg)") {
             arrows.style.cssText = "animation-name: arrowDown; animation-duration: 1s; animation-fill-mode: forwards;"
         }
@@ -30,13 +30,13 @@ function answers(pars) {
     // If condition to display answer or none.
     if (fontWeight === "400") {
         pars.style.fontWeight = "bold";
-        pars.querySelector('#arrow').style.cssText =
+        pars.querySelector('.arrow').style.cssText =
             "animation-name: arrowUp; animation-duration: 1s; animation-fill-mode: forwards;";
         answer.style.display = "block";
     }
     else {
         pars.style.fontWeight = "unset";
-        pars.querySelector('#arrow').style.cssText =
+        pars.querySelector('.arrow').style.cssText =
             "animation-name: arrowDown; animation-duration: 1s; animation-fill-mode: forwards;";
         answer.style.display = "none";
     }

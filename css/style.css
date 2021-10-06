@@ -6,12 +6,12 @@ body{
     font-size: 14px;
 }
 
-h1 {
+h2 {
     text-align: center;
     font-size: x-large;
     margin: 15px 0px 25px;
 }
-p{
+h4{
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -20,7 +20,7 @@ p{
     cursor: pointer;
     font-weight: unset;
 }
-#arrow{
+.arrow{
     content: url(../images/icon-arrow-down.svg);
     margin-right: 2px;
     /* transform: rotate(0deg); */
@@ -86,9 +86,9 @@ hr{
         left: 50%;
         transform: translate(-50% , -50%);
         background: white;
-        width: 50em;
+        width: 55em;
         margin: auto;
-        padding: 30px 20px;
+        padding: 50px;
         border-radius: 25px;
         display: flex;
         flex-direction: row;
@@ -104,42 +104,46 @@ hr{
     
     .box {
         content: url(../images/illustration-box-desktop.svg);
-        position: absolute;
         transform: translate(-50% , -50%);
-        top: 22em;
-        left: -17px;
-        position: relative; 
-        animation-name: example;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+    top: 25em;
+    left: -3.3em;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     }
     @keyframes example {
-        0% {top:22em;}
-        50% {top:19em;}
-        100% {top:022em;}
+        0% {top:26em;}
+        50% {top:23em;}
+        100% {top:26em;}
     }
     .women {
         content: url(../images/illustration-woman-online-desktop.svg);
         position: absolute;
-        top: 20.4em;
-        left: 103px;
+        top: 24em;
+        left: 7.3em;
         transform: translate(-50% , -50%);
-        width: 330px;
-        z-index: -1;
+        width: 28em;
+        z-index: -1;    
     }
     
     .shadow {
         content: url(../images/bg-pattern-desktop.svg);
         position: absolute;
-        top: 60%;
-        left: -4%;
+        top: 22em;
+        left: -3.2em;
         transform: translate(-50% , -50%);
-        width: 40em;
+        width: 50em;
         z-index: -2;
     }
     
     .content{
         width: 50%;
+    }
+    h2 {
+        text-align: left;
+        font-size: x-large;
+        margin: 15px 0px 25px;
     }
 }
 
