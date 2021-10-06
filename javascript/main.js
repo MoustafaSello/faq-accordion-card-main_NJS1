@@ -20,7 +20,7 @@ function answers(pars) {
     const answer = document.getElementById(`${pars.id}Answer`);
     //Back all P & Answers style to orignal at style.css
     document.querySelectorAll(".answers").forEach(ele => ele.style.display = "none");
-    document.querySelectorAll("h4").forEach(ele1 => ele1.style.fontWeight = "unset");
+    document.querySelectorAll("p").forEach(ele1 => ele1.style.fontWeight = "unset");
     document.querySelectorAll('.arrow').forEach(arrows => {
         if (arrows.style.animationName == 'arrowUp' || arrows.style.transform == "rotate(180deg)") {
             arrows.style.cssText = "animation-name: arrowDown; animation-duration: 1s; animation-fill-mode: forwards;"

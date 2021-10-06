@@ -11,7 +11,7 @@ h1 {
     font-size: x-large;
     margin: 15px 0px 25px;
 }
-h4{
+p{
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -20,6 +20,7 @@ h4{
     cursor: pointer;
     font-weight: unset;
 }
+
 .arrow{
     content: url(../images/icon-arrow-down.svg);
     margin-right: 2px;
