@@ -6,7 +6,7 @@ body{
     font-size: 14px;
 }
 
-h2 {
+h1 {
     text-align: center;
     font-size: x-large;
     margin: 15px 0px 25px;
@@ -140,7 +140,7 @@ hr{
     .content{
         width: 50%;
     }
-    h2 {
+    h1 {
         text-align: left;
         font-size: x-large;
         margin: 15px 0px 25px;
